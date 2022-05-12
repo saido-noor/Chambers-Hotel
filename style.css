@@ -1,0 +1,140 @@
+body{
+    overflow-x: hidden;
+    
+    width: 100%;
+    height: 20vh;
+
+}
+/* .section1{
+    
+    
+} */
+.navbar{
+    background-color: black;
+    padding: 4px;
+    position: relative;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+.navbar ul{
+    display: flex;
+    margin-right: -1%;
+    margin-left: 50%;
+    margin-top: -2%;
+}
+.navbar ul li{
+    list-style: none;
+    padding: 1px 20px;
+    margin: -0% 5px;
+}
+.section1{
+    padding: -20%;
+}
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+}
+
+.navbar .h1{
+    list-style: none;
+    margin-right: 10%;
+    margin-left: 5%;
+    margin-top: 1%;
+    padding: 0;
+    font-size: 30px;
+    color: white;
+}
+
+.image{
+    margin-right: 5%;
+}
+.container{
+    display: flex;
+   
+    height: 100%;
+    padding: 0%;
+    padding-top: -0%;
+    
+}
+.text{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-left: -20%;
+    padding-right: -70%;
+    margin-right: 2%;
+    font-size: 30px;
+}
+.row{
+    display: flex;
+}
+
+/* .container2 .line{
+    padding: -0%;
+   
+}
+
+.container2{
+    display: flex;
+   
+    height: 100%;
+    padding: 0%;
+    padding-top: -0%;
+}
+
+.row1{
+    display: flex;
+    margin-right: -3%;
+    margin-left: 20%;
+}
+.cont{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-left: -10%;
+    padding-right: -70%;
+    margin-right: -0%;
+    
+} */
+.image1{
+    margin-right: -8%;   
+    margin-left: 7%;
+}
+
+.image-grid {
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 300px;
+  
+    box-sizing: border-box;
+    padding: var(--gap);
+  
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+  }
+  
+  .image-grid > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .image-grid-col-2 {
+    grid-column: span 2;
+  }
+  
+  .image-grid-row-2 {
+    grid-row: span 2;
+  }
+  
+  /* Anything udner 1024px */
+  @media screen and (max-width: 1024px) {
+    .image-grid {
+      --num-cols: 2;
+      --row-height: 200px;
+    }
+  }
+  
